@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Web Developer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+            box-shadow: 0 2px 12px #0000000d;
+        }
+
+        .logo {
+            color: #4f46e5;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #334155;
+            margin-left: 22px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #4f46e5;
+        }
+
+        .hero {
+            min-height: 430px;
+            padding: 100px 8%;
+            background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .tag {
+            color: #4f46e5;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(32px, 4.5vw, 48px);
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        h1 span {
+            color: #4f46e5;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #475569;
+            margin-bottom: 28px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #4f46e5;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #3730a3;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .section-intro {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            max-width: 750px;
+            margin: auto;
+            text-align: center;
+            color: #475569;
+            font-size: 17px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 6px 20px #0f172a08;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px #0f172a12;
+        }
+
+        .card h3 {
+            color: #4338ca;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        .contact {
+            text-align: center;
+            background: #eef2ff;
+        }
+
+        .contact p {
+            color: #475569;
+            margin: 15px 0 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: #1e293b;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 18px 5%;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 12px 0 0;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 75px 6%;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">MyPortfolio.</div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="tag">WELCOME TO MY PORTFOLIO</div>
+
+            <h1>Hi, I'm Puspa Sah <span>Web Developer</span></h1>
+
+            <p>
+                I am learning to build clean, simple and
+                user-friendly websites using HTML and CSS.
+            </p>
+
+            <a href="#projects" class="button">
+                Explore My Work
+            </a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-intro">A little introduction</p>
+
+        <div class="about">
+            <p>
+                Hello! I am a beginner web developer who enjoys
+                learning new technologies and creating websites.
+                I am currently improving my HTML and CSS skills
+                and working on practical projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-intro">
+            Technologies I am learning and practising
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>
+                    Creating website structure with headings,
+                    paragraphs, links and forms.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>
+                    Learning colours, spacing, layouts,
+                    styling and responsive design.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>
+                    Practising clean layouts and easy-to-use
+                    website interfaces.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-intro">
+            A showcase of my practice work
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A personal website built with HTML and CSS
+                    to introduce myself and my skills.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Business Landing Page</h3>
+                <p>
+                    A practice project for presenting a
+                    business and its services.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Contact Page</h3>
+                <p>
+                    A simple page design to display contact
+                    details and communication options.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+
+        <p>
+            Have a question or a project idea?
+            Feel free to get in touch.
+        </p>
+
+        <a class="button"
+           href="mailto:your-email@example.com">
+            Contact Me
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MyPortfolio. Created with HTML and CSS.</p>
+    </footer>
+
+</body>
+</html>
